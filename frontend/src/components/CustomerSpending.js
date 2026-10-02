@@ -702,7 +702,10 @@ export default function CustomerSpending() {
                       cx="50%"
                       cy="50%"
                       outerRadius={100}
-                      label
+                      label={({ name, value }) =>
+  `${name}: ${formatCurrency(value)}`
+}
+labelLine
                     >
                       {categoryChartData.map(
                         (
