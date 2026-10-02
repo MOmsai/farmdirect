@@ -4,6 +4,10 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Wheat, MapPin, Home as HomeIcon, ArrowLeft, CheckCircle2 } from 'lucide-react';
 
+const API_BASE =
+  process.env.REACT_APP_API_URL ||
+  'https://farmdirect-backend-gd6o.onrender.com/api';
+
 function FarmProfile() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -25,7 +29,7 @@ function FarmProfile() {
   useEffect(() => {
     if (!token) return;
     axios
-      .get('http://localhost:5000/api/auth/farm-profile', {
+      .get(`${API_BASE}/auth/farm-profile`, {
         headers: { 'x-auth-token': token },
       })
       .then((res) => {

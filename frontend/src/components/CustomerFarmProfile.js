@@ -14,7 +14,9 @@ import {
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE =
+  process.env.REACT_APP_API_URL ||
+  'https://farmdirect-backend-gd6o.onrender.com/api';
 
 const CustomerFarmProfile = () => {
   const navigate = useNavigate();

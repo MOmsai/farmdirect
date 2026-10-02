@@ -3,7 +3,10 @@ import React, { useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
 import { Calculator, Trash2, Save, RefreshCw, Sprout, TrendingUp, Wallet, Target } from 'lucide-react';
 
-const API = 'https://farmdirect-backend-gd6o.onrender.com/api';
+const API = `${
+  process.env.REACT_APP_API_URL ||
+  'https://farmdirect-backend-gd6o.onrender.com/api'
+}/budget`;
 
 const emptyForm = {
   cropName: '',
