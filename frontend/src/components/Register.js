@@ -61,7 +61,7 @@ function Register() {
     setLoading(true);
 
     try {
-      await axios.post('http://localhost:5000/api/auth/register', {
+      await axios.post('https://farmdirect-backend-gd6o.onrender.com/api/auth/register', {
         name: formData.name,
         email: formData.email,
         password: formData.password,
