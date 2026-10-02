@@ -26,7 +26,8 @@ app.use(
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://farmdirect-frontend-ecru.vercel.app'
+  'https://farmdirect-frontend-ecru.vercel.app',
+  'https://myfarmdirect.vercel.app'
 ];
 
 app.use(cors({
