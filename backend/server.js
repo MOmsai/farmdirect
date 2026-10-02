@@ -23,12 +23,18 @@ app.use(
   })
 );
 
-app.use(
-  cors({
-    origin: 'http://localhost:3000',
-    credentials: true,
-  })
-);
+
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://farmdirect-frontend-ecru.vercel.app'
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'x-auth-token', 'Authorization']
+}));
+
 
 // =====================================================
 // ROUTES
