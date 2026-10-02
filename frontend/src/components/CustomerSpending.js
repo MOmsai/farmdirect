@@ -38,7 +38,7 @@ import {
 } from 'react-router-dom';
 
 const API_URL =
-  'http://localhost:5000/api';
+  'https://farmdirect-backend-gd6o.onrender.com/api';
 
 const COLORS = [
   '#16a34a',

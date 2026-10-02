@@ -36,7 +36,7 @@ import {
 import AIFeatureCard from './AIFeatureCard';
 import AIInsightsModal from './AIInsightsModal';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://farmdirect-backend-gd6o.onrender.com/api';
 
 /* =========================================================
    DEFAULT ANALYTICS

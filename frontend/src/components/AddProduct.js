@@ -11,7 +11,7 @@ import {
   Package,
 } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://farmdirect-backend-gd6o.onrender.com/api';
 
 const CATEGORIES = [
   'Vegetables',

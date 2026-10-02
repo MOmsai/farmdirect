@@ -22,7 +22,7 @@ import {
   useNavigate,
 } from 'react-router-dom';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://farmdirect-backend-gd6o.onrender.com/api';
 
 const Navbar = () => {
   const navigate = useNavigate();
